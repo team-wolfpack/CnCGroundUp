@@ -1,0 +1,98 @@
+[
+		{
+			"id" : "3f495e0b.724e6a",
+			"type" : "watson-conversation-v1",
+			"z" : "ee694ea1.47785",
+			"name" : "STSA-CONV",
+			"workspaceid" : "8502761e-4cec-4f1d-8045-d99bdf96b5ac",
+			"multiuser" : false,
+			"context" : true,
+			"empty-payload" : false,
+			"default-endpoint" : false,
+			"service-endpoint" : "https://gateway.watsonplatform.net/conversation/api",
+			"x" : 570,
+			"y" : 140,
+			"wires" : [ [ "70f5c5a1.5ac72c" ] ]
+		},
+		{
+			"id" : "8c0563b9.b6f52",
+			"type" : "http in",
+			"z" : "ee694ea1.47785",
+			"name" : "conv-api",
+			"url" : "/v1/workspaces/voiceproxy/message",
+			"method" : "post",
+			"swaggerDoc" : "",
+			"x" : 116,
+			"y" : 139,
+			"wires" : [ [ "8663c444.d3af38" ] ]
+		},
+		{
+			"id" : "500e9a2d.e44564",
+			"type" : "http response",
+			"z" : "ee694ea1.47785",
+			"name" : "",
+			"x" : 913,
+			"y" : 528,
+			"wires" : []
+		},
+		{
+			"id" : "8663c444.d3af38",
+			"type" : "function",
+			"z" : "ee694ea1.47785",
+			"name" : "conv-format",
+			"func" : "if(msg.payload.input){\n    if(msg.payload.input.text){\n        msg.payload = msg.payload.input.text;\n        \n    }else{\n        msg.payload = \"Hi\";\n    }\n}\nelse{\n    msg.payload = \"Hi\";\n}\nreturn msg;",
+			"outputs" : 1,
+			"noerr" : 0,
+			"x" : 336,
+			"y" : 140,
+			"wires" : [ [ "3f495e0b.724e6a" ] ]
+		},
+		{
+			"id" : "42dbf23d.db890c",
+			"type" : "switch",
+			"z" : "ee694ea1.47785",
+			"name" : "Conversation Actions",
+			"property" : "convdata.output.action",
+			"propertyType" : "msg",
+			"rules" : [ {
+				"t" : "eq",
+				"v" : "CurrentTempCelsius",
+				"vt" : "str"
+			}, {
+				"t" : "eq",
+				"v" : "CurrentTempFahrenheit",
+				"vt" : "str"
+			}, {
+				"t" : "eq",
+				"v" : "changeColor",
+				"vt" : "str"
+			}, {
+				"t" : "else"
+			} ],
+			"checkall" : "false",
+			"outputs" : 4,
+			"x" : 256,
+			"y" : 386,
+			"wires" : [ [], [], [ "500e9a2d.e44564" ], [ "500e9a2d.e44564" ] ]
+		},
+		{
+			"id" : "70f5c5a1.5ac72c",
+			"type" : "function",
+			"z" : "ee694ea1.47785",
+			"name" : "after_WCS",
+			"func" : "conv_data = {};\nconv_data = msg.payload;\nmsg.convdata = conv_data;\nreturn msg;",
+			"outputs" : 1,
+			"noerr" : 0,
+			"x" : 780,
+			"y" : 140,
+			"wires" : [ [ "42dbf23d.db890c" ] ]
+		}, {
+			"id" : "97510c66.ba10e8",
+			"type" : "comment",
+			"z" : "ee694ea1.47785",
+			"name" : "API endpoint for WCS",
+			"info" : "",
+			"x" : 154,
+			"y" : 46.75,
+			"wires" : []
+		} ]
