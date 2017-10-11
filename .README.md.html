@@ -1,0 +1,1023 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>/Users/ctylerus.ibm.com/Documents/CnCGroundUp/.README.md.html</title>
+
+
+<style type="text/css">
+body {
+	color: #333;
+	font: 13px/1.4 "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	background: transparent;
+	color: #4183c4;
+	text-decoration: none;
+}
+
+a:active,
+a:hover {
+	outline: 0 none;
+	text-decoration: underline;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn {
+	font-style: italic;
+}
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+mark {
+	background: #ff0;
+	color: #000;
+}
+small {
+	font-size: 80%;
+}
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+img {
+	border: 0 none;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+figure {
+	margin: 1em 40px;
+}
+hr {
+	box-sizing: content-box;
+	height: 0;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace,monospace;
+	font-size: 1em;
+}
+
+pre {
+	overflow: auto;
+	font: 12px Consolas,"Liberation Mono",Menlo,Courier,monospace;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.markdown-body {
+	padding: 30px;
+	font-size: 16px;
+	line-height: 1.6;
+	word-wrap: break-word;
+}
+
+.markdown-body>*:first-child {
+	margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+	margin-bottom: 0 !important;
+}
+
+.markdown-body .absent {
+	color: #c00;
+}
+
+.markdown-body .anchor {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	display: block;
+	padding-right: 6px;
+	padding-left: 30px;
+	margin-left: -30px;
+}
+
+.markdown-body .anchor:focus {
+	outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+	position: relative;
+	margin-top: 1em;
+	margin-bottom: 16px;
+	font-weight: bold;
+	line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+	display: none;
+	color: #000;
+	vertical-align: middle;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+	padding-left: 8px;
+	margin-left: -30px;
+	line-height: 1;
+	text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+	display: inline-block;
+}
+
+.markdown-body h1 tt,
+.markdown-body h1 code,
+.markdown-body h2 tt,
+.markdown-body h2 code,
+.markdown-body h3 tt,
+.markdown-body h3 code,
+.markdown-body h4 tt,
+.markdown-body h4 code,
+.markdown-body h5 tt,
+.markdown-body h5 code,
+.markdown-body h6 tt,
+.markdown-body h6 code {
+	font-size: inherit;
+}
+
+.markdown-body h1 {
+	padding-bottom: 0.3em;
+	font-size: 2.25em;
+	line-height: 1.2;
+	border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+	padding-bottom: 0.3em;
+	font-size: 1.75em;
+	line-height: 1.225;
+	border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+	font-size: 1.5em;
+	line-height: 1.43;
+}
+
+.markdown-body h4 {
+	font-size: 1.25em;
+}
+
+.markdown-body h5 {
+	font-size: 1em;
+}
+
+.markdown-body h6 {
+	font-size: 1em;
+	color: #777;
+}
+
+.markdown-body p,.markdown-body blockquote,
+.markdown-body ul,.markdown-body ol,
+.markdown-body dl,.markdown-body table,
+.markdown-body pre {
+	margin-top: 0;
+	margin-bottom: 16px;
+}
+
+.markdown-body hr {
+	height: 4px;
+	padding: 0;
+	margin: 16px 0;
+	background-color: #e7e7e7;
+	border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+	padding-left: 2em;
+}
+
+.markdown-body ul.no-list,
+.markdown-body ol.no-list {
+	padding: 0;
+	list-style-type: none;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.markdown-body li>p {
+	margin-top: 16px;
+}
+
+.markdown-body dl {
+	padding: 0;
+}
+
+.markdown-body dl dt {
+	padding: 0;
+	margin-top: 16px;
+	font-size: 1em;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.markdown-body dl dd {
+	padding: 0 16px;
+	margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+	padding: 0 15px;
+	color: #777;
+	border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+	margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+	margin-bottom: 0;
+}
+
+.markdown-body table {
+	display: block;
+	width: 100%;
+	overflow: auto;
+	word-break: normal;
+	word-break: keep-all;
+}
+
+.markdown-body table th {
+	font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+	padding: 6px 13px;
+	border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+	background-color: #fff;
+	border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+	background-color: #f8f8f8;
+}
+
+.markdown-body img {
+	max-width: 100%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.markdown-body span.frame {
+	display: block;
+	overflow: hidden;
+}
+
+.markdown-body span.frame>span {
+	display: block;
+	float: left;
+	width: auto;
+	padding: 7px;
+	margin: 13px 0 0;
+	overflow: hidden;
+	border: 1px solid #ddd;
+}
+
+.markdown-body span.frame span img {
+	display: block;
+	float: left;
+}
+
+.markdown-body span.frame span span {
+	display: block;
+	padding: 5px 0 0;
+	clear: both;
+	color: #333;
+}
+
+.markdown-body span.align-center {
+	display: block;
+	overflow: hidden;
+	clear: both;
+}
+
+.markdown-body span.align-center>span {
+	display: block;
+	margin: 13px auto 0;
+	overflow: hidden;
+	text-align: center;
+}
+
+.markdown-body span.align-center span img {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.markdown-body span.align-right {
+	display: block;
+	overflow: hidden;
+	clear: both;
+}
+
+.markdown-body span.align-right>span {
+	display: block;
+	margin: 13px 0 0;
+	overflow: hidden;
+	text-align: right;
+}
+
+.markdown-body span.align-right span img {
+	margin: 0;
+	text-align: right;
+}
+
+.markdown-body span.float-left {
+	display: block;
+	float: left;
+	margin-right: 13px;
+	overflow: hidden;
+}
+
+.markdown-body span.float-left span {
+	margin: 13px 0 0;
+}
+
+.markdown-body span.float-right {
+	display: block;
+	float: right;
+	margin-left: 13px;
+	overflow: hidden;
+}
+
+.markdown-body span.float-right>span {
+	display: block;
+	margin: 13px auto 0;
+	overflow: hidden;
+	text-align: right;
+}
+
+.markdown-body code,.markdown-body tt {
+	padding: 0;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	margin: 0;
+	font-size: 85%;
+	background-color: rgba(0,0,0,0.04);
+	border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after,
+.markdown-body tt:before,
+.markdown-body tt:after {
+	letter-spacing: -0.2em;
+	content: "\00a0";
+}
+
+.markdown-body code br,
+.markdown-body tt br {
+	display: none;
+}
+
+.markdown-body del code {
+	text-decoration: inherit;
+}
+
+.markdown-body pre>code {
+	padding: 0;
+	margin: 0;
+	font-size: 100%;
+	word-break: normal;
+	white-space: pre;
+	background: transparent;
+	border: 0;
+}
+
+.markdown-body .highlight {
+	margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+	padding: 16px;
+	overflow: auto;
+	font-size: 85%;
+	line-height: 1.45;
+	background-color: #f7f7f7;
+	border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+	margin-bottom: 0;
+	word-break: normal;
+}
+
+.markdown-body pre {
+	word-wrap: normal;
+}
+
+.markdown-body pre code,
+.markdown-body pre tt {
+	display: inline;
+	max-width: initial;
+	padding: 0;
+	margin: 0;
+	overflow: initial;
+	line-height: inherit;
+	word-wrap: normal;
+	background-color: transparent;
+	border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after,
+.markdown-body pre tt:before,
+.markdown-body pre tt:after {
+	content: normal;
+}
+
+.highlight .pl-coc,
+.highlight .pl-entl,
+.highlight .pl-entm,
+.highlight .pl-eoa,
+.highlight .pl-mai .pl-sf,
+.highlight .pl-mm,
+.highlight .pl-pdv,
+.highlight .pl-sc,
+.highlight .pl-som,
+.highlight .pl-sr,
+.highlight .pl-v,
+.highlight .pl-vpf {
+	color: #0086b3;
+}
+.highlight .pl-eoac,
+.highlight .pl-mdht,
+.highlight .pl-mi1,
+.highlight .pl-mri,
+.highlight .pl-va,
+.highlight .pl-vpu {
+	color: #008080;
+}
+.highlight .pl-c,
+.highlight .pl-pdc {
+	color: #b4b7b4;
+	font-style: italic;
+}
+.highlight .pl-k,
+.highlight .pl-ko,
+.highlight .pl-kolp,
+.highlight .pl-mc,
+.highlight .pl-mr,
+.highlight .pl-ms,
+.highlight .pl-s,
+.highlight .pl-sok,
+.highlight .pl-st {
+	color: #6e5494;
+}
+.highlight .pl-ef,
+.highlight .pl-enf,
+.highlight .pl-enm,
+.highlight .pl-entc,
+.highlight .pl-eoi,
+.highlight .pl-sf,
+.highlight .pl-smc {
+	color: #d12089;
+}
+.highlight .pl-ens,
+.highlight .pl-eoai,
+.highlight .pl-kos,
+.highlight .pl-mh .pl-pdh,
+.highlight .pl-mp,
+.highlight .pl-pde,
+.highlight .pl-stp {
+	color: #458;
+}
+.highlight .pl-enti {
+	color: #d12089;
+	font-weight: bold;
+}
+.highlight .pl-cce,
+.highlight .pl-enc,
+.highlight .pl-kou,
+.highlight .pl-mq {
+	color: #f93;
+}
+.highlight .pl-mp1 .pl-sf {
+	color: #458;
+	font-weight: bold;
+}
+.highlight .pl-cos,
+.highlight .pl-ent,
+.highlight .pl-md,
+.highlight .pl-mdhf,
+.highlight .pl-ml,
+.highlight .pl-pdc1,
+.highlight .pl-pds,
+.highlight .pl-s1,
+.highlight .pl-scp,
+.highlight .pl-sol {
+	color: #df5000;
+}
+.highlight .pl-c1,
+.highlight .pl-cn,
+.highlight .pl-pse,
+.highlight .pl-pse .pl-s2,
+.highlight .pl-vi {
+	color: #a31515;
+}
+.highlight .pl-mb,
+.highlight .pl-pdb {
+	color: #df5000;
+	font-weight: bold;
+}
+.highlight .pl-mi,
+.highlight .pl-pdi {
+	color: #6e5494;
+	font-style: italic;
+}
+.highlight .pl-ms1 {
+	background-color: #f5f5f5;
+}
+.highlight .pl-mdh,
+.highlight .pl-mdi {
+	font-weight: bold;
+}
+.highlight .pl-mdr {
+	color: #0086b3;
+	font-weight: bold;
+}
+.highlight .pl-s2 {
+	color: #333;
+}
+.highlight .pl-ii {
+	background-color: #df5000;
+	color: #fff;
+}
+.highlight .pl-ib {
+	background-color: #f93;
+}
+.highlight .pl-id {
+	background-color: #a31515;
+	color: #fff;
+}
+.highlight .pl-iu {
+	background-color: #b4b7b4;
+}
+.highlight .pl-mo {
+	color: #969896;
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+function getDocumentScrollTop() 
+{
+   var res = document.body.scrollTop || document.documentElement.scrollTop || window.pageYOffset || 0;
+   // alert(res);
+   return res;
+}
+
+function setDocumentScrollTop(ypos) 
+{
+	window.scrollTo(0, ypos);
+}
+
+</script>
+
+
+</head>
+<body class="markdown-body">
+<p><a href="images/STSALogo.png" target="_blank"><img src="images/STSALogo.png" alt="STSA Logo" style="max-width:100%;" /></a></p> 
+<h1> <a id="workshop-2-watson-conversation-service" class="anchor" href="#workshop-2-watson-conversation-service" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Workshop 2 Watson Conversation Service</h1> 
+<h2> <a id="architecture" class="anchor" href="#architecture" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Architecture</h2> 
+<p>Below is the architecture overview of workshop 2, the Watson Conversation Service (WCS). This architecture is consistent with the reference implementations of WCS for cloud native applications using microservices. <a href="images/wk2-arch-overview.png" target="_blank"><img src="images/wk2-arch-overview.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<h2> <a id="application-overview" class="anchor" href="#application-overview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Application Overview</h2> 
+<p>Workshop 2 is intended to help you understand the basics of the Watson Conversation Service (WCS) as part of the Watson API's. WCS is a question and answer system that focuses on providing a dialog type of experience between the user and the conversation system. This style of interaction is commonly called a bot. The intent of this lab is to take the base work model from workshop 1 and extend the lab to leverage the WCS capabilities. We will enable through a dialog approach WCS interacting with the data from the IoT device, asking questions specific to the data that is captured. The lab will also allow for commands to be sent to the IoT device, directed from the response of the WCS dialog flow. Though the example is simple, it will provide you with a solid understanding of the core pieces of WCS.</p> 
+<h3> <a id="terminology" class="anchor" href="#terminology" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Terminology</h3> 
+<p>WCS has a couple of terms that need to be understood. This will allow for an easier time with creating an application (i.e. Dialog) in WCS</p> 
+<p><strong>Intent:</strong> An intent is the intention of the command or question given by the user to WCS. It is common to think of intents as the verbs or actions that need to occur. An Example of an Intent is &quot;Tell me the temperature&quot; or &quot;I want to know the current temperature&quot;. In both cases, though the sentences are different they both as asking WCS for temperature information. It should be noted that WCS can only support a single Intent per interaction with WCS. So asking questions with multiple intents will produce unreliable ordering of answers to the question.</p> 
+<p><strong>Entities:</strong> An entity is the object that intents use to help narrow the scope of the request. It is common to think of entities as nouns or objects. The nice thing about entities, compared to intents, is that you can have multiple entities per interaction. This is very helpful when trying to narrow down the answers to a question.</p> 
+<p><strong>Dialog:</strong> The conversation that is created within WCS, is called a dialog. A dialog is composed of creating a flow between intents and entities. The combination of flows and subFlows allows WCS to provide mult-layered conversation based on multiple interactions, instead of a single question and answer.</p> 
+<h2> <a id="create-watson-conversation-service" class="anchor" href="#create-watson-conversation-service" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Create Watson Conversation Service</h2> 
+<ol> 
+ <li>Logon to BlueMix and go to your dashboard.</li> 
+ <li>Click on the catalog button at the top navigation on the right</li> 
+ <li>Select &quot;Watson&quot; on the left navigation under the Services menu</li> 
+ <li>Click on &quot;Conversation&quot;</li> 
+</ol> 
+<p><a href="images/wk2-catalog-wcs.png" target="_blank"><img src="images/wk2-catalog-wcs.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol start="5"> 
+ <li>In the service name type STSA-WK2-WCS-xxx (where xxx is your team number). You can leave credential name as is, if you like.</li> 
+ <li>Click on the create in the lower right corner. You should now see the following</li> 
+</ol> 
+<p><a href="images/wk2-wcs-manage.png" target="_blank"><img src="images/wk2-wcs-manage.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol start="7"> 
+ <li>You will need to cut and paste your service credentials. Click on &quot;Service Credentials&quot; on the left navigation, right under &quot;Manage&quot;. Once the page has loaded, click on &quot;View Credentials&quot; on the right side of the screen. A drop down will show with your specific credentials</li> 
+</ol> 
+<p><a href="images/wk2-wcs-credentials.png" target="_blank"><img src="images/wk2-wcs-credentials.png" alt="Architecture Overview" style="max-width:100%;" /></a> Your values for username and password will be different than shown.</p> 
+<ol start="8"> 
+ <li>Click the copy icon to copy the values to your clipboard. Paste the values in a text file for later use. Make sure you get both:</li> 
+</ol> 
+<ul> 
+ <li>username</li> 
+ <li>password</li> 
+</ul> 
+<ol start="9"> 
+ <li>Go back to the manage page, by clicking on the manage link on the left side navigation. This will take you back to the manage page.</li> 
+</ol> 
+<p>You have now completed the first step in creating the WCS service instance.</p> 
+<h2> <a id="launch-wcs-tooling" class="anchor" href="#launch-wcs-tooling" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Launch WCS tooling</h2> 
+<ol> 
+ <li>Click on the &quot;Launch tool&quot; icon to take you to the WCS workspace</li> 
+</ol> 
+<p><a href="images/wk2-wcs-manage-launch.png" target="_blank"><img src="images/wk2-wcs-manage-launch.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol start="2"> 
+ <li>This will open another browser window and you should now be on the Watson Conversation Workspace page</li> 
+</ol> 
+<p><a href="images/wk2-wcs-workspaces.png" target="_blank"><img src="images/wk2-wcs-workspaces.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol start="3"> 
+ <li>You are going to create a new workspace. Click on the <em><strong>&quot;Create a new workspace&quot;</strong></em> tile.</li> 
+ <li>Enter a workspace name i.e. STSA-WK2-xxx (where xxx is your team number).</li> 
+</ol> 
+<p><a href="images/wk2-wcs-workspaces-create-popup.png" target="_blank"><img src="images/wk2-wcs-workspaces-create-popup.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol start="5"> 
+ <li>Click the last icon (Back to workspaces) on the left navigation. It should look like</li> 
+</ol> 
+<p><a href="images/wk2-conversation-click-workspaces-small.png" target="_blank"><img src="images/wk2-conversation-click-workspaces-small.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<p>or</p> 
+<p><a href="images/wk2-conversation-click-workspaces-big.png" target="_blank"><img src="images/wk2-conversation-click-workspaces-big.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<p>You should now see:</p> 
+<p><a href="images/wk2-conversatons-workspaces-dash.png" target="_blank"><img src="images/wk2-conversatons-workspaces-dash.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol start="5"> 
+ <li>Click on the <strong>three green buttons</strong> in the upper right corner of your workspace tile.</li> 
+</ol> 
+<p><a href="images/wk2-conversation-workspace-tile.png" target="_blank"><img src="images/wk2-conversation-workspace-tile.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<p>You should now see</p> 
+<p><a href="images/wk2-conversation-workspace-tile-submenu.png" target="_blank"><img src="images/wk2-conversation-workspace-tile-submenu.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol start="5"> 
+ <li>Click <strong>View Details</strong>. You should now see something like the following</li> 
+</ol> 
+<p><a href="images/wk2-conversation-workspace-tile-viewdetails.png" target="_blank"><img src="images/wk2-conversation-workspace-tile-viewdetails.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol start="5"> 
+ <li> <p>Copy the <strong>Workplace ID</strong> and paste it somewhere for use later.</p> </li> 
+ <li> <p>Click on the <strong>White Back Arrow</strong> in the upper corner of the tile.</p> </li> 
+</ol> 
+<p><a href="images/wk2-conversation-workspace-detail-convid.png" target="_blank"><img src="images/wk2-conversation-workspace-detail-convid.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol start="5"> 
+ <li>Click <strong>Get Started</strong> or anywhere in the tile, to get started.</li> 
+</ol> 
+<p><a href="images/wk2-conversation-workspace-tile-getstarted.png" target="_blank"><img src="images/wk2-conversation-workspace-tile-getstarted.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<h2> <a id="create-intents" class="anchor" href="#create-intents" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Create Intents</h2> 
+<p>You are now ready to create some <strong>Intents</strong>. Click on the Intents link. You should now see the following:</p> 
+<p><a href="images/wks-wcs-workspaces-create-intents.png" target="_blank"><img src="images/wks-wcs-workspaces-create-intents.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<p>Click the <strong>&quot;Create New&quot;</strong> button in the middle of the page. You should now see the following:</p> 
+<p><a href="images/wk2-wcs-workspaces-intents-add.png" target="_blank"><img src="images/wk2-wcs-workspaces-intents-add.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol> 
+ <li>Add a new Intent name of <strong>Information</strong>.</li> 
+</ol> 
+<p><a href="images/wk2-conversation-intent-ex-information.png" target="_blank"><img src="images/wk2-conversation-intent-ex-information.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<p>You then need to provide some examples. Copy the samples provided, one at a time, paste each into the tool.</p> 
+<pre><code>What is the temperature
+Can you explain
+What is a
+I need information about
+What is the current temperature
+I need some information on the temperature
+Can you tell me the temperature
+I need to know the temperature
+
+</code></pre> 
+<p>It should look like the following:</p> 
+<p><a href="images/wk2-wcs-workspaces-intents-examples.png" target="_blank"><img src="images/wk2-wcs-workspaces-intents-examples.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<p>Click <strong>Done</strong> in the upper right corner when finished.</p> 
+<p><a href="images/wk2-wcs-workspaces-intents-done.png" target="_blank"><img src="images/wk2-wcs-workspaces-intents-done.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol start="2"> 
+ <li>Add another intent, by clicking &quot;Create new&quot; button. Use the new Intent name of <strong>Greeting</strong>. Copy the samples and look at the image below.</li> 
+</ol> 
+<pre><code>good evening
+Hello
+Hi
+Howdy
+Good morning
+Good afternoon
+Yo Yo Yo
+Sup dude
+</code></pre> 
+<p><a href="images/wk2-wcs-workspaces-intents-greeting.png" target="_blank"><img src="images/wk2-wcs-workspaces-intents-greeting.png" alt="Architecture Overview" style="max-width:100%;" /></a> Click <strong>Done</strong> when finished.</p> 
+<ol start="3"> 
+ <li>Add another intent <strong>GoodBye</strong>. Add the following examples also.</li> 
+</ol> 
+<pre><code>good-bye
+see you later
+talk to you later
+goodbye
+later
+</code></pre> 
+<p><a href="images/wk2-wcs-workspaces-intents-goodbye.png" target="_blank"><img src="images/wk2-wcs-workspaces-intents-goodbye.png" alt="Architecture Overview" style="max-width:100%;" /></a> Click <strong>Done</strong> when finished.</p> 
+<ol start="4"> 
+ <li>Add one last intent <strong>ChangeColor</strong> with the following examples:</li> 
+</ol> 
+<pre><code>I need to change the color of the sensor
+Please change the sensor color
+Change the color of the sensor
+make the sensors color green
+change the sensor color to green
+
+</code></pre> 
+<p><a href="images/wk2-wcs-workspaces-intents-changecolor.png" target="_blank"><img src="images/wk2-wcs-workspaces-intents-changecolor.png" alt="Architecture Overview" style="max-width:100%;" /></a> Click <strong>Done</strong> when finished.</p> 
+<p>You have now finished creating all of the intents. (Nice Job!)</p> 
+<h2> <a id="create-entities" class="anchor" href="#create-entities" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Create Entities</h2> 
+<p>Next we want to create some <strong>Entities</strong>. Click on the &quot;Entities&quot; link at the top of the page.</p> 
+<p><a href="images/wk2-wcs-workspaces-entities-add.png" target="_blank"><img src="images/wk2-wcs-workspaces-entities-add.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol> 
+ <li>Click the <strong>&quot;Create New&quot;</strong> button.</li> 
+ <li>Type <strong>&quot;Temperature&quot;</strong> as the new Entity name.</li> 
+</ol> 
+<p><a href="images/wk2-wcs-workspaces-entities-examples.png" target="_blank"><img src="images/wk2-wcs-workspaces-entities-examples.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<p>Now notice, you need to add examples of new &quot;Temperature&quot; entities. So add <strong>&quot;Current Temperature&quot;</strong> as a new entity but also you need to provide some synonyms to help identify variations of the entity value. Now add <strong>&quot;Temperature now&quot;</strong> and <strong>&quot;Current Temp&quot;</strong> as synonyms. You now need to add <strong>&quot;Average Temperature&quot;</strong> and <strong>&quot;Temperature&quot;</strong> with the corresponding synonyms, as shown in the image above. When you add a synonym, hit the <strong>Enter</strong> key from your keyboard to add the next synonym. After you are finished with each set of synonyms click the <strong>Plus</strong> icon to add them.</p> 
+<pre><code>Current temperature		current temp	temperature now
+Average temperature		avg temp		avg temperature
+Temperature 			Temp
+
+</code></pre> 
+<p>If for some reason you accidentally don't add one of the synonyms, you can add it after you click the done button. You just select the entity and add the appropriate synonyms.</p> 
+<p>Click <strong>Done</strong> when finished.</p> 
+<ol start="2"> 
+ <li>Create another entity called <strong>&quot;degree&quot;</strong> also add the associated synonyms.</li> 
+</ol> 
+<pre><code>Celsius			celcius		degrees in c	degrees C
+Fahrenheit		Degrees F	degrees in f
+
+
+</code></pre> 
+<p><a href="images/wk2-wcs-workspaces-entities-degree.png" target="_blank"><img src="images/wk2-wcs-workspaces-entities-degree.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<p>Click <strong>Done</strong> when finished.</p> 
+<ol start="3"> 
+ <li>Add one last entity called <strong>Colors</strong> and the associated values.</li> 
+</ol> 
+<pre><code>Yellow
+Blue
+White
+Green
+Red
+Black	off
+</code></pre> 
+<p><a href="images/wk2-wcs-workspaces-entities-colors.png" target="_blank"><img src="images/wk2-wcs-workspaces-entities-colors.png" alt="Architecture Overview" style="max-width:100%;" /></a> Click <strong>Done</strong> when finished.</p> 
+<p>Great you now completed the adding of Entities. (Well done!).</p> 
+<h2> <a id="create-a-dialog" class="anchor" href="#create-a-dialog" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Create a Dialog</h2> 
+<p>We are now ready to create a dialog. Click on the Dialog link at the top of the page.</p> 
+<p><a href="images/wk2-wcs-workspaces-dialog-add.png" target="_blank"><img src="images/wk2-wcs-workspaces-dialog-add.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol> 
+ <li>Click the <strong>&quot;Create&quot;</strong> button to start to create a dialog. You should now see the following:</li> 
+</ol> 
+<p><a href="images/wk2-wcs-workspaces-dialog-start.png" target="_blank"><img src="images/wk2-wcs-workspaces-dialog-start.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<p>What you see are two &quot;Dialog Nodes&quot;. The first is the standard &quot;Welcome&quot; message and the other is a catch-all &quot;Anything else&quot; . Remember the way a conversation dialog works is by scanning from the top of the tree and evaluating every node until a condition is met that satisfies the question being asked. So when the conversation starts WCS will respond with the &quot;Welcome&quot; Node. If you click on the &quot;Welcome&quot; node you will see that the standard Watson response is &quot;Hello. How can I help you?&quot; <a href="images/wk2-wcs-workspaces-dialog-click-welcome.png" target="_blank"><img src="images/wk2-wcs-workspaces-dialog-click-welcome.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol start="2"> 
+ <li>We now want to create our own node, based on the &quot;Intents&quot; we create earlier. To add a new node in the tree, click on the &quot;Welcome&quot; node, and then click on the <strong>&quot;Add Node&quot;</strong> icon.</li> 
+</ol> 
+<p><a href="images/wk2-wcs-workspace-dialog-node-add.png" target="_blank"><img src="images/wk2-wcs-workspace-dialog-node-add.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<p>You should now see the following:</p> 
+<p><a href="images/wk2-wcs-workspaces-dialog-add-input.png" target="_blank"><img src="images/wk2-wcs-workspaces-dialog-add-input.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol start="3"> 
+ <li>Type <strong>Greetings</strong> as the name of the node. If bot recognize should be <strong>&quot;#Greeting&quot;</strong>. The Response condition should be set to &quot;True&quot;, by clicking on the <strong>Add response condition</strong> button. You can provide any response text you like. It should look similar to the following:</li> 
+</ol> 
+<p><a href="images/wk2-wcs-workspaces-dialog-node-greeting.png" target="_blank"><img src="images/wk2-wcs-workspaces-dialog-node-greeting.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<p>You can click the <strong>green X</strong> in the upper right to close the dialog node editor.</p> 
+<ol start="4"> 
+ <li>Again create another root node by clicking on the <strong>&quot;Greetings&quot;</strong> node and then clicking <strong>&quot;Add node&quot;</strong>. This will add another node. This node's values are as follows:</li> 
+</ol> 
+<p><a href="images/wk2-wcs-workspaces-dialog-node-goodbye.png" target="_blank"><img src="images/wk2-wcs-workspaces-dialog-node-goodbye.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<p>You can click the <strong>green X</strong> in the upper right to close the dialog node editor.</p> 
+<ol start="5"> 
+ <li>Create a new node under the <strong>&quot;Goodbye&quot;</strong> node, called <strong>Color Change</strong> with the following information:</li> 
+</ol> 
+<p><a href="images/wk2-wcs-workspaces-dialog-node-colorchange.png" target="_blank"><img src="images/wk2-wcs-workspaces-dialog-node-colorchange.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<p>In this node, your response needs to have a condition set, prior to responding. This is done by clicking on the <strong>Add response condition</strong> link.</p> 
+<p><a href="images/wk2-wcs-workspaces-dialog-node-colorchange-response-condition.png" target="_blank"><img src="images/wk2-wcs-workspaces-dialog-node-colorchange-response-condition.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<p>Take special note of the extra information in the first response. Make sure to copy it properly.</p> 
+<p><code>I just changed the color to &lt;? entities.Colors.literal ?&gt;</code></p> 
+<p>This is an expression language snippet of code. If you look at the information in the node, the intent is to change color and the first condition for a response is &quot;@Colors&quot;, which signals to Watson, if a known color is provided in the user's input then use that color in the response.</p> 
+<p>Now click on the <strong>Add another response</strong> to add another condition. Make the second response condition <strong>True</strong>. If an unknown color is typed (i.e. Violet) in the user's input the processing will hit the &quot;True&quot; condition. This is because &quot;Violet&quot; is not in our &quot;@Color&quot; entity definition.</p> 
+<p><a href="images/wk2-wcs-workspaces-dialog-node-colorchange-response-condition-true.png" target="_blank"><img src="images/wk2-wcs-workspaces-dialog-node-colorchange-response-condition-true.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol start="6"> 
+ <li>Create a node under &quot;Color Change&quot; called <strong>WhatElse</strong>, with the following information:</li> 
+</ol> 
+<p><a href="images/wk2-wcs-workspaces-dialog-node-whatelse.png" target="_blank"><img src="images/wk2-wcs-workspaces-dialog-node-whatelse.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<p>At this point your Dialog Tree should look like the following</p> 
+<p><a href="images/wk2-conversation-dialog-tree.png" target="_blank"><img src="images/wk2-conversation-dialog-tree.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol start="7"> 
+ <li>We are now on the last node we are going to create. Insert this node between the &quot;Goodbye&quot; and &quot;Color Change&quot; node. This is done by clicking on the goodbye node and then clicking the <strong>&quot;Add Node&quot;</strong>.</li> 
+</ol> 
+<p><a href="images/wk2-wcs-workspaces-dialog-node-aftergoodbye.png" target="_blank"><img src="images/wk2-wcs-workspaces-dialog-node-aftergoodbye.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol start="8"> 
+ <li>Enter <strong>Information</strong> as the name of the node. In the &quot;If bot recognizes&quot; type the word &quot;Information&quot; you will see a type ahead pop up. Select the &quot;#Information&quot; entry. <strong>Do not provide any responses.</strong> </li> 
+</ol> 
+<p><a href="images/wk2-wcs-workspaces-dialog-node-information.png" target="_blank"><img src="images/wk2-wcs-workspaces-dialog-node-information.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol start="9"> 
+ <li>Click the large green X at the top to close the dialog editor.</li> 
+ <li>Now you want to create a sub-dialog. This time make sure the <strong>&quot;Information&quot;</strong> node is selected and then click on the <strong>&quot;Add child node&quot;</strong> button.</li> 
+</ol> 
+<p><a href="images/wk2-wcs-workspaces-dialog-node-information-plussign.png" target="_blank"><img src="images/wk2-wcs-workspaces-dialog-node-information-plussign.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol start="11"> 
+ <li>Enter <strong>Temperature</strong> as the name of the node.</li> 
+ <li>In the &quot;If bot recognizes&quot; field enter &quot;@Temperature:(Current Temperature)&quot;. This is the entity defined earlier.</li> 
+</ol> 
+<p><a href="images/wk2-wcs-workspaces-dialog-node-information-temperature.png" target="_blank"><img src="images/wk2-wcs-workspaces-dialog-node-information-temperature.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol start="13"> 
+ <li>In the Response section, for the first response, add a response condition. Type &quot;@degree:Celsius&quot; in the response condition field. Then add the Watson response of &quot;The current temperature in celsius is&quot;</li> 
+ <li>Add another response condition of &quot;@degree:Fahrenheit&quot; with the response message of &quot;The current temperature in fahrenheit is&quot;.</li> 
+ <li>Add one last response condition of &quot;True&quot;. this is a catch all condition for this node. Add the Watson response as &quot;The current temperature in fahrenheit is&quot; The reason for this last response to have a response in the event Watson doesn't knows what type of temperature you are looking for. For example, Watson knows you are looking for information about the temperature, but isn't sure if you mean in celsius or fahrenheit. Your completed node should look the like the following:</li> 
+</ol> 
+<p><a href="images/wk2-wcs-workspaces-dialog-node-temperature.png" target="_blank"><img src="images/wk2-wcs-workspaces-dialog-node-temperature.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<p>Close the node editor, we have one last sub-node to create.</p> 
+<ol start="16"> 
+ <li>Under the &quot;Temperature&quot; node, create a new node. The is done by clicking on the &quot;Temperature&quot; node and then clicking on <strong>Add node</strong> button.</li> 
+</ol> 
+<p><a href="images/wk2-wcs-workspaces-dialog-node-temperature-addnode.png" target="_blank"><img src="images/wk2-wcs-workspaces-dialog-node-temperature-addnode.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<p>Call it <strong>Unknown</strong> Add the information like below:</p> 
+<p><a href="images/wk2-wcs-workspaces-dialog-node-information-unknown.png" target="_blank"><img src="images/wk2-wcs-workspaces-dialog-node-information-unknown.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol start="17"> 
+ <li>The next step is to go back to the &quot;Information&quot; node, by clicking on the node itself. Next click on the <strong>Three green buttons</strong> This will open a small menu like the following:</li> 
+</ol> 
+<p><a href="images/wk2-wcs-workspaces-dialog-node-information-submenu.png" target="_blank"><img src="images/wk2-wcs-workspaces-dialog-node-information-submenu.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol start="18"> 
+ <li>Click on the <strong>Jump to</strong> menu item and then click on the <strong>Temperature</strong> node. You should now see the following:</li> 
+</ol> 
+<p><a href="images/wk2-wcs-workspaces-dialog-node-information-temperature-submenu.png" target="_blank"><img src="images/wk2-wcs-workspaces-dialog-node-information-temperature-submenu.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol start="19"> 
+ <li>Click on the <strong>If Bot recognized condition</strong> menu item. You screen should now look like the following:</li> 
+</ol> 
+<p><a href="images/wk2-wcs-workspaces-dialog-node-information-temperature-jump.png" target="_blank"><img src="images/wk2-wcs-workspaces-dialog-node-information-temperature-jump.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol start="20"> 
+ <li>Next we want to select the three circles on the &quot;Temperature&quot; node. Like with the &quot;Information&quot; node, select the <strong>Jump to</strong> menu item. Then select the <strong>&quot;WhatElse&quot;</strong> node. This time select the <strong>&quot;Respond&quot;</strong> option. The sub-flow should now look like the following:</li> 
+</ol> 
+<p><a href="images/wk2-wcs-workspaces-dialog-node-information-temperature-jump-respond.png" target="_blank"><img src="images/wk2-wcs-workspaces-dialog-node-information-temperature-jump-respond.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol start="21"> 
+ <li>Next we want to select the three circles on the &quot;Color Change&quot; node. Like with the &quot;Temperature&quot; node, select the <strong>Jump to</strong> menu item. Then select the <strong>&quot;WhatElse&quot;</strong> node. This time select the <strong>&quot;Respond&quot;</strong> option. The sub-flow should now look like the following:</li> 
+</ol> 
+<p><a href="images/wk2-wcs-workspaces-dialog-node-colorchange-jump.png" target="_blank"><img src="images/wk2-wcs-workspaces-dialog-node-colorchange-jump.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol start="22"> 
+ <li>Go back to the &quot;Temperature&quot; node and click on it to open the node editor. Click the three bubbles in the upper right, by degree celsius.</li> 
+</ol> 
+<p><a href="images/wk2-wcs-workspaces-dialog-node-temperature-json.png" target="_blank"><img src="images/wk2-wcs-workspaces-dialog-node-temperature-json.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<p>Then click on the <strong>Open JSON Editor</strong> menu item.</p> 
+<p><a href="images/wk2-wcs-workspaces-dialog-node-temperature-json-pulldown.png" target="_blank"><img src="images/wk2-wcs-workspaces-dialog-node-temperature-json-pulldown.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol start="23"> 
+ <li>We are going to add a single line of code to the JSON. The purpose of this code, is to send a signal to the NodeRed application that some special processing needs to occur. So for Watson to respond to the <strong>degree:Celsius</strong> entity,request we need to have a new attribute on the JSON object. Type <strong>&quot;action&quot;: &quot;CurrentTempCelsius&quot;</strong> make sure you put the <strong>&quot;comma&quot;</strong> right after the curly bracket, but before the new code you just added.</li> 
+</ol> 
+<p><a href="images/wk2-wcs-workspaces-dialog-node-temperature-json-celsius.png" target="_blank"><img src="images/wk2-wcs-workspaces-dialog-node-temperature-json-celsius.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol start="24"> 
+ <li>You now need to do the same thing for the each of the other responses on the temperature node. For the <strong>degree:Fahrenheit</strong> response add <strong>&quot;action&quot;: &quot;CurrentTempFahrenheit&quot;</strong> </li> 
+</ol> 
+<p><a href="images/wk2-wcs-workspaces-dialog-node-temperature-json-fahrenheit.png" target="_blank"><img src="images/wk2-wcs-workspaces-dialog-node-temperature-json-fahrenheit.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<ol start="25"> 
+ <li>Now do it for the <strong>True</strong> condition as well. We will have the default response be in fahrenheit so add <strong>&quot;action&quot;: &quot;CurrentTempFahrenheit&quot;</strong> </li> 
+</ol> 
+<p><a href="images/wk2-wcs-workspaces-dialog-node-temperature-json-default.png" target="_blank"><img src="images/wk2-wcs-workspaces-dialog-node-temperature-json-default.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<p>You can click the <strong>green X</strong> in the upper right to close the dialog node editor.</p> 
+<ol start="26"> 
+ <li>The last step is to update the <strong>ChangeColor</strong> dialog node, with a similar action command. but this time set the command value to <strong>&quot;action&quot;:&quot;changeColor&quot;</strong> </li> 
+</ol> 
+<p><a href="images/wk2-wcs-workspaces-dialog-node-changecolor-json.png" target="_blank"><img src="images/wk2-wcs-workspaces-dialog-node-changecolor-json.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> 
+<p>We are now finished with the entire Dialog. Congratulations! Now is time to test your code.</p> 
+<h2> <a id="nodered-flow" class="anchor" href="#nodered-flow" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NodeRed Flow</h2> 
+<p>What might become obvious is that the responses from WCS are static. There is nothing personalized in the responses. Because of this we need to add a layer in front of WCS to take the responses and make them personalized. We are going to use NodeRed, like we did for the IoT lab. Below are the steps needed for adding a new flow to your existing <strong>BlueMix NodeRed</strong> application.</p> 
+<ol> 
+ <li> <p>Open your browser and go to the BlubMix NodeRed URL. It should be something like STSAWorkshops-xx.mybluemix.net. You can also get to it from your BlueMix Dashboard.</p> </li> 
+ <li> <p>Login to your NodeRed Editor</p> <p><a href="images/wk2-nodered-logon.png" target="_blank"><img src="images/wk2-nodered-logon.png" alt="Architecture Overview" style="max-width:100%;" /></a></p> </li> 
+ <li> <p>You should now see something like the following, which is your flow for IoT</p> <p><a href="images/wk2-nodered-flow-iot.png" target="_blank"><img src="images/wk2-nodered-flow-iot.png" alt="Iot Flow" style="max-width:100%;" /></a></p> </li> 
+ <li> <p>Click <a href="https://github.com/jdcalus/STSA-Workshop-2-WCS/blob/master/wk2-wcs-flow.json">WCS NodeRed Flow</a> link. This will take you to the NodeRed flow JSON file which has a pre-developed flow for talking to WCS. You should now see:</p> <p><a href="images/wk2-github-flowjson-small.png" target="_blank"><img src="images/wk2-github-flowjson-small.png" alt="Iot Flow" style="max-width:100%;" /></a></p> </li> 
+ <li> <p>Highlight all of the JSON text (Triple click on the text) and copy it to your clipboard. (ctrl+c on your keyboard).</p> </li> 
+ <li> <p>Go back to your NodeRed editor and in the upper right corner is the cake layer icon, click on it. Then click import and then click clipboard</p> <p><a href="images/wk2-nodered-import.png" target="_blank"><img src="images/wk2-nodered-import.png" alt="Iot Flow" style="max-width:100%;" /></a></p> </li> 
+ <li> <p>You should now see the following dialog window:</p> <p><a href="images/wk2-nodered-import-paste.png" target="_blank"><img src="images/wk2-nodered-import-paste.png" alt="Iot Flow" style="max-width:100%;" /></a> click in the center of the dialog and paste the information from your clipboard. (ctrl+v). Make sure the <strong>new flow</strong> button is pressed before you import. Your screen should now look something like the following, which a new tab called <strong>WCS Flow</strong></p> <p><a href="images/wk2-nodered-flow-wcs.png" target="_blank"><img src="images/wk2-nodered-flow-wcs.png" alt="Iot Flow" style="max-width:100%;" /></a></p> </li> 
+</ol> 
+<h3> <a id="update-nodered-flow" class="anchor" href="#update-nodered-flow" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Update NodeRed Flow</h3> 
+<p>Now we need to update a couple of the nodes, with information that was provided earlier in IoT Workshop.</p> 
+<ol> 
+ <li>Make sure you have the credentials information from your DashDB service. This can be access from your <strong>BlueMix dashboard</strong>, by clicking on the service:</li> 
+</ol> 
+<p><a href="images/wk2-bluemix-dashboard-dashdb.png" target="_blank"><img src="images/wk2-bluemix-dashboard-dashdb.png" alt="Iot Flow" style="max-width:100%;" /></a></p> 
+<p>You should see the manage page for that instance of the dashDB service</p> 
+<p><a href="images/wk2-bluemix-dashdb-manage.png" target="_blank"><img src="images/wk2-bluemix-dashdb-manage.png" alt="Iot Flow" style="max-width:100%;" /></a></p> 
+<p>Now click on the Service Credentials link on the left side. Once the page loads, there is an option for <strong>View Credentials</strong>. You will need to copy the <strong>HostName, Username and Password</strong> in the next step.</p> 
+<p><a href="images/wk2-bluemix-dashdb-credentials.png" target="_blank"><img src="images/wk2-bluemix-dashdb-credentials.png" alt="Iot Flow" style="max-width:100%;" /></a></p> 
+<ol start="2"> 
+ <li>Now go back to NodeRed and make sure you are in the <strong>WCS flow</strong>.</li> 
+</ol> 
+<p>Click on the <strong>Current Temp</strong> node. This is a DashDB node, so we need to make sure the setting are configured properly. You should see something like:</p> 
+<p><a href="images/wk2-nodered-flow-wcs-dashdb-config.png" target="_blank"><img src="images/wk2-nodered-flow-wcs-dashdb-config.png" alt="Iot Flow" style="max-width:100%;" /></a></p> 
+<p>If you see the &quot;Server&quot; information from the IoT lab. Select it. If you don't see an option for the &quot;Server&quot; information from the IoT Lab, you will need to add the information. You do this by clicking on the <strong>pencil</strong> icon to set up the connection information. You should see something like</p> 
+<p><a href="images/wk2-nodered-flow-wcs-dashdb-blank-security.png" target="_blank"><img src="images/wk2-nodered-flow-wcs-dashdb-blank-security.png" alt="Iot Flow" style="max-width:100%;" /></a></p> 
+<p>Once you fill in the values it should look similar to:</p> 
+<p><a href="images/wk2-nodered-flow-wcs-dashdb-security.png" target="_blank"><img src="images/wk2-nodered-flow-wcs-dashdb-security.png" alt="Iot Flow" style="max-width:100%;" /></a></p> 
+<p>Click the <strong>update</strong> button then click on the <strong>Done</strong> button. Your dashDB node should now have the proper information to connect to the service instance.</p> 
+<ol start="3"> 
+ <li>Now double click on the <strong>IoT Change Color</strong> node.</li> 
+</ol> 
+<p><a href="images/wk2-nodered-flow-wcs-iotdb.png" target="_blank"><img src="images/wk2-nodered-flow-wcs-iotdb.png" alt="Iot Flow" style="max-width:100%;" /></a></p> 
+<p>We need to make sure the connection information is correct. If you are unsure, go to your flow from <strong>Lab 1</strong> and look at the <strong>IoT: Command</strong> node.</p> 
+<p><a href="images/wk2-node-red-iotcommand-node.png" target="_blank"><img src="images/wk2-node-red-iotcommand-node.png" alt="Iot Flow" style="max-width:100%;" /></a></p> 
+<ol start="4"> 
+ <li>The final step is to double click on the <strong>STSA-CONV</strong> node.</li> 
+</ol> 
+<p><a href="images/wk2-nodered-flow-wcs-node.png" target="_blank"><img src="images/wk2-nodered-flow-wcs-node.png" alt="Iot Flow" style="max-width:100%;" /></a></p> 
+<p>This is the Watson Conversation node, that connects to the conversation you just created above.</p> 
+<p><a href="images/wk2-nodered-flow-wcs-node-wcs-config.png" target="_blank"><img src="images/wk2-nodered-flow-wcs-node-wcs-config.png" alt="Iot Flow" style="max-width:100%;" /></a></p> 
+<p>Provide the following from above</p> 
+<ul> 
+ <li>Username</li> 
+ <li>Password</li> 
+ <li>Workspace</li> 
+</ul> 
+<ol start="5"> 
+ <li>Click <strong>Done</strong> when completed. You are done updating the NodeRed Flows for WCS</li> 
+ <li>Click the <strong>DEPLOY</strong> button at the top of the screen.</li> 
+</ol> 
+<h3> <a id="watson-conversation-web-client" class="anchor" href="#watson-conversation-web-client" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Watson Conversation Web Client</h3> 
+<p>The next step is to create a sample application that connects to your NodeRed flow. When you click on the button below, you will be taken to bluemix DevOps page. This will automatically create a new application for you, via the DevOps ToolChain. If you are not logged on to BlueMix you will need to logon.</p> 
+<ol> 
+ <li> <p>Click the Deploy to BlueMix button below to provision the web client application.</p> <p><a href="https://bluemix.net/deploy?repository=https://github.com/team-wolfpack/WCS-Chatbot-Client.git"><img src="https://camo.githubusercontent.com/46f2f9aa54a26e36a277d9706cf9432297817d65/68747470733a2f2f626c75656d69782e6e65742f6465706c6f792f627574746f6e2e706e67" alt="Deploy to BlueMix" data-canonical-src="https://bluemix.net/deploy/button.png" style="max-width:100%;" /></a></p> <p>You will see a screen like the following:</p> <p><a href="images/wk2-devops-autocreate.png" target="_blank"><img src="images/wk2-devops-autocreate.png" alt="Iot Flow" style="max-width:100%;" /></a></p> </li> 
+ <li> <p>Click the deploy button, after about 1 minute or so, but may be longer if BlueMix is slow :-) , your screen will change to something like the following:</p> <p><a href="images/wk2-devops-toolchain-autocreate.png" target="_blank"><img src="images/wk2-devops-toolchain-autocreate.png" alt="Iot Flow" style="max-width:100%;" /></a></p> </li> 
+ <li> <p>Click on the <strong>Deliver</strong> tile</p> <p><a href="images/wk2-devops-toolchain-deliver-icon.png" target="_blank"><img src="images/wk2-devops-toolchain-deliver-icon.png" alt="Iot Flow" style="max-width:100%;" /></a></p> <p>Then you should see something like the following:</p> <p><a href="images/wk2-devops-toolchain-deliver-home.png" target="_blank"><img src="images/wk2-devops-toolchain-deliver-home.png" alt="Iot Flow" style="max-width:100%;" /></a></p> </li> 
+ <li> <p>Once the message in the deploy tile has changed to finished from Deploy running, click on the <strong>Rocket</strong> icon under <strong>Last Executed Results</strong></p> <p><a href="images/wk2-devops-toolchain-deliver-deploy-tile.png" target="_blank"><img src="images/wk2-devops-toolchain-deliver-deploy-tile.png" alt="Iot Flow" style="max-width:100%;" /></a></p> <p>This will take you to the newly created applications. Your screen should now look like:</p> <p><a href="images/wk2-bluemix-wcs-webclient.png" target="_blank"><img src="images/wk2-bluemix-wcs-webclient.png" alt="Iot Flow" style="max-width:100%;" /></a></p> </li> 
+ <li> <p>Click on the <strong>Runtime</strong> link on the left and your screen should change, then click on environment tab in the middle of the screen. It should look like the following:</p> <p><a href="images/wk2-bluemix-wcs-webclient-runtime.png" target="_blank"><img src="images/wk2-bluemix-wcs-webclient-runtime.png" alt="Iot Flow" style="max-width:100%;" /></a></p> </li> 
+ <li> <p>In the <strong>CONVERSATION_URL</strong> value change the &quot;xxxxxx&quot; to the hostname of your <strong>NodeRed</strong> application. This comes from the NodeRed url that where you are creating your NodeRed flow. So something like &quot;STSAWorkshops-xx.mybluemix.net&quot;, do not include &quot;/red/#</p> </li> 
+ <li> <p>Click the <strong>Save</strong> button. The application will restart.</p> </li> 
+ <li> <p>Click on the <strong>Visit App URL</strong>. This is at the top of the page. <strong>You will get an error message</strong>.</p> </li> 
+</ol> 
+<p><a href="images/wk2-not-found.png" target="_blank"><img src="images/wk2-not-found.png" alt="Iot Flow" style="max-width:100%;" /></a></p> 
+<p>That is okay. You need to add <strong>webclient</strong> to the end of the browsers URL.</p> 
+<p><a href="images/wk2-bluemix-wcs-webclient-url.png" target="_blank"><img src="images/wk2-bluemix-wcs-webclient-url.png" alt="Iot Flow" style="max-width:100%;" /></a></p> 
+<p>Your screen should now look like the following:</p> 
+<p><a href="images/wk2-bluemix-wcs-webclient-webpage.png" target="_blank"><img src="images/wk2-bluemix-wcs-webclient-webpage.png" alt="Iot Flow" style="max-width:100%;" /></a></p> 
+<h3> <a id="ask-watson-questions" class="anchor" href="#ask-watson-questions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ask Watson questions</h3> 
+<p>You can now ask Watson questions about the temperature.</p> 
+<ol> 
+ <li>What is the current temperature in Celsius</li> 
+ <li>What is the current temperature</li> 
+ <li>What is the current temperature in fahrenheit</li> 
+ <li>Change the background color to blue</li> 
+</ol> 
+<p>Ask Watson this question</p> 
+<ol start="5"> 
+ <li>What is the temperature</li> 
+</ol> 
+<p>Did you get the response you were expecting? Why not? (hint: go look at the Temperature dialog node in Watson Conversation)</p> 
+<p>Nice Job you are now a Jedi Knight in Watson Conversation Service!</p> 
+<h3> <a id="jedi-knights-and-jedi-masters" class="anchor" href="#jedi-knights-and-jedi-masters" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Jedi Knights and Jedi Masters</h3> 
+<p>If you have time, you can start to add more Dialog Nodes to ask other questions and you can provide the appropriate responses. Play with the ordering of the nodes in the dialog tree. Create new child nodes and see how they react to the flow. Also you can always add new entities and intents and then create even more dialog nodes. It is really endless as to what you can do.</p> 
+<p>If you have a hard time thinking of what else you can do, don't worry, in the Hybrid cloud and Blockchain labs you will have more opportunities to add more dialog nodes.</p>
+</body>
+</html>

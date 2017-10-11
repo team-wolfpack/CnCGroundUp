@@ -407,6 +407,18 @@ You can click the **green X** in the upper right to close the dialog node editor
 We are now finished with the entire Dialog. Congratulations! Now is time to test your code.
 
 ## NodeRed Flow
+
+<!--- 	
+		Loren
+		This is where we will need to change to remove the reference to the previously built flow, becasue we didn't do the earlier workshops
+		We will need to have them do the following:
+			- Create a NodeRed service (which also creates a Cloudant service)
+			- Create a Weather Company service
+			- Connect their Conversation service they created earlier to the NodeRed service
+			- import the wcs-nodered-flow-start.json file into NodeRed
+
+-->			
+
 What might become obvious is that the responses from WCS are static. There is nothing personalized in the responses.
 Because of this we need to add a layer in front of WCS to take the responses and make them personalized. We are going to use NodeRed, like we did for the IoT lab.
 Below are the steps needed for adding a new flow to your existing **BlueMix NodeRed** application.
@@ -499,7 +511,7 @@ The next step is to create a sample application that connects to your NodeRed fl
 
 1. Click the Deploy to BlueMix button below to provision the web client application.
 
-	[![Deploy to BlueMix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/jdcalus/STSA-WCS-WebProxy.git)
+	[![Deploy to BlueMix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/team-wolfpack/WCS-Chatbot-Client.git)
 
 	You will see a screen like the following:
 
