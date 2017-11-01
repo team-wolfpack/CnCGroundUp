@@ -4,7 +4,7 @@
 ## Architecture
 Below is the architecture overview of the workshop, Watson Conversation Service (WCS). This architecture
 is consistent with the reference implementations of WCS for cloud native applications using microservices.
-![Architecture Overview](images/wk1-arch-overview.png)
+![Architecture Overview](images/wk1-arch-overview2.png)
 
 
 ## Application Overview
